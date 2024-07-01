@@ -1,5 +1,6 @@
 package com.example.studentrecords;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,7 +25,7 @@ import org.json.JSONObject;
 
 public class AddStudent extends AppCompatActivity {
     EditText et1,et2,et3,et4,et5,et6,et7,et8;
-    AppCompatButton bt1;
+    AppCompatButton bt1,bt2;
     String apiurl="https://courseapplogix.onrender.com/addstudents";
 
     @Override
@@ -41,6 +42,7 @@ public class AddStudent extends AppCompatActivity {
         et7=(EditText) findViewById(R.id.mailet);
         et8=(EditText) findViewById(R.id.addet);
         bt1=(AppCompatButton) findViewById(R.id.addbtn);
+        bt2=(AppCompatButton) findViewById(R.id.btmadd);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +89,14 @@ public class AddStudent extends AppCompatActivity {
 
             }
         });
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in1=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(in1);
+            }
+        });
+
 
     }
 }

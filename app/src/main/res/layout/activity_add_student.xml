@@ -128,5 +128,13 @@
         android:textColor="@color/black"
         android:id="@+id/addbtn"
         android:text="ADD"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background2"
+        android:text="BACK TO MENU"
+        android:layout_marginTop="30px"
+        android:id="@+id/btmadd"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
